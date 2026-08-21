@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nakka Venkatesh — EEE Engineer & AI Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="loader" class="loader-overlay">
+    <div class="loader-content">
+      <div class="spinner"></div>
+      <div class="loader-text">Loading Experience <span id="progress-percent">0%</span></div>
+      <div class="progress-bar-container">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background 3D Scroll Canvas -->
+  <div class="canvas-container">
+    <canvas id="animation-canvas"></canvas>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-text">VENKATESH</span><span class="logo-dot">.</span>
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://www.linkedin.com/in/venky-venkatesh-726172415" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">HIRE ME</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Content Sections Overlaid on Scroll Canvas -->
+  <main class="content-wrapper">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-tag">Get Ready To Start Work.</div>
+          <h1 class="hero-title">
+            I'm <span class="accent-text">Engineer</span><br />
+            <span class="serif-title">Nakka Venkatesh</span>
+          </h1>
+          <p class="hero-desc">
+            Electrical & Electronics Engineering Graduate with hands-on industrial precision manufacturing experience at PRICOL Limited, specialized in AI problem solving, APIs, and modern interactive 3D web engineering.
+          </p>
+
+          <!-- Social Media Action Buttons in Hero Section -->
+          <div class="hero-social-buttons">
+            <a href="https://github.com/vv3607527-creator" target="_blank" rel="noopener noreferrer" class="social-hero-btn github-btn">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/venky-venkatesh-726172415" target="_blank" rel="noopener noreferrer" class="social-hero-btn linkedin-btn">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://www.instagram.com/mrvenky60" target="_blank" rel="noopener noreferrer" class="social-hero-btn instagram-btn">
+              <i class="fa-brands fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a href="https://x.com/VENKY5789" target="_blank" rel="noopener noreferrer" class="social-hero-btn twitter-btn">
+              <i class="fa-brands fa-x-twitter"></i>
+              <span>X (Twitter)</span>
+            </a>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#about" class="btn btn-primary">
+              <span>EXPLORE PROFILE</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>GET IN TOUCH</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-image-card">
+            <img src="profile.jpg" alt="Nakka Venkatesh" class="hero-profile-img" />
+          </div>
+        </div>
+      </div>
+      
+      <!-- Scroll Indicator -->
+      <div class="scroll-hint" id="scroll-hint">
+        <span>SCROLL TO EXPLORE 3D</span>
+        <div class="mouse-icon">
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container about-container">
+        <div class="about-image-col">
+          <div class="framed-image-box">
+            <div class="image-frame-border"></div>
+            <div class="image-inner">
+              <img src="profile.jpg" alt="Nakka Venkatesh Profile" class="about-profile-img" />
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content-col">
+          <div class="section-tag">About us</div>
+          <h2 class="section-heading">Why hire me for your<br />next project?</h2>
+          <div class="role-subtitle">Electrical & Electronics Engineer & AI Developer</div>
+          <p class="about-description">
+            Detail-oriented B.Tech Electrical & Electronics Engineering graduate with 6 months of industrial precision assembly and quality assurance experience at PRICOL Limited. Passionate about integrating hardware fundamentals with cutting-edge Generative AI, APIs, and real-time interactive 3D web systems.
+          </p>
+
+          <div class="bio-info-grid">
+            <div class="bio-item">
+              <span class="bio-label">Name:</span>
+              <span class="bio-value">Nakka Venkatesh</span>
+            </div>
+            <div class="bio-item">
+              <span class="bio-label">Location:</span>
+              <span class="bio-value">Venkatagiri, AP, India</span>
+            </div>
+            <div class="bio-item">
+              <span class="bio-label">Phone:</span>
+              <span class="bio-value">+91 8639865789</span>
+            </div>
+            <div class="bio-item">
+              <span class="bio-label">Email:</span>
+              <span class="bio-value"><a href="mailto:venkeypro456@gmail.com" style="color: var(--text-muted); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--primary-red)'" onmouseout="this.style.color='var(--text-muted)'">venkeypro456@gmail.com</a></span>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="#contact" class="btn btn-primary">CONTACT ME</a>
+            <a href="https://www.linkedin.com/in/venky-venkatesh-726172415" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LINKEDIN PROFILE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Skills Section -->
+    <section id="education" class="edu-skills-section">
+      <div class="container edu-skills-container">
+        <!-- Education Column -->
+        <div class="edu-col">
+          <div class="section-tag">Qualification</div>
+          <h2 class="section-heading">My Education</h2>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-header">
+                <span class="platform-name">NBKR INSTITUTE OF SCIENCE & TECHNOLOGY</span>
+                <span class="timeline-date">Graduated 2024</span>
+              </div>
+              <h3 class="timeline-title">Bachelor of Technology (B.Tech)</h3>
+              <p class="timeline-subtitle">Electrical & Electronics Engineering (EEE)</p>
+              <p class="timeline-desc">
+                Core coursework in electrical systems, electronics hardware, microcontrollers, control systems, and computational algorithms.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-header">
+                <span class="platform-name">Z.P. HIGH SCHOOL VENKATAGIRI</span>
+                <span class="timeline-date">2007 - 2021</span>
+              </div>
+              <h3 class="timeline-title">Secondary & Higher Secondary</h3>
+              <p class="timeline-desc">
+                Strong academic foundation in science, mathematics, and analytical problem solving in Venkatagiri, Andhra Pradesh.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Column -->
+        <div id="skills" class="skills-col">
+          <div class="section-tag">Expertise</div>
+          <h2 class="section-heading">My Top Skills</h2>
+
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">APPLICATION PROGRAMMING INTERFACES (API)</span>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">AI PROBLEM SOLVING & GENERATIVE AI</span>
+                <span class="skill-percent">92%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 92%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">AI FOR RESEARCH & DATA ANALYSIS</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">PCB ASSEMBLY & ELECTRONICS TESTING</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">QUALITY ASSURANCE & 5S METHODOLOGY</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">INTERACTIVE 3D WEB DEVELOPMENT</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="cert-section">
+      <div class="container">
+        <div class="section-center-head">
+          <div class="section-tag">Credentials</div>
+          <h2 class="section-heading">Certifications & AI Expertise</h2>
+        </div>
+
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="cert-icon-box"><i class="fa-solid fa-brain"></i></div>
+            <h3 class="cert-title">Foundations in Generative AI</h3>
+            <p class="cert-issuer">AI Certification</p>
+            <p class="cert-desc">Core competencies in generative models, prompt architecture, and machine learning principles.</p>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-box"><i class="fa-solid fa-network-wired"></i></div>
+            <h3 class="cert-title">Claude Platform 101 & Claude 101</h3>
+            <p class="cert-issuer">Anthropic Claude</p>
+            <p class="cert-desc">Expertise in Claude API workflows, prompt engineering, context management, and AI tooling.</p>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-box"><i class="fa-solid fa-chart-line"></i></div>
+            <h3 class="cert-title">Speed Up Data Analysis</h3>
+            <p class="cert-issuer">Presentation & Analysis Building</p>
+            <p class="cert-desc">Fast-tracking business insights, automated data reporting, and dynamic presentation synthesis.</p>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-box"><i class="fa-solid fa-microchip"></i></div>
+            <h3 class="cert-title">Introduction to AI</h3>
+            <p class="cert-issuer">Foundational AI</p>
+            <p class="cert-desc">Comprehensive foundations of artificial intelligence, reasoning systems, and automated pipelines.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <div class="section-center-head">
+          <div class="section-tag">Work History</div>
+          <h2 class="section-heading">Professional Experience</h2>
+        </div>
+
+        <div class="experience-grid">
+          <div class="exp-card exp-card-featured">
+            <div class="exp-badge">INDUSTRIAL EXPERIENCE</div>
+            <div class="exp-period">June 2023 - November 2023 (6 Months)</div>
+            <h3 class="exp-role">Production Operator Intern</h3>
+            <div class="exp-company"><i class="fa-solid fa-building"></i> PRICOL Limited &bull; Tada, AP</div>
+            <ul class="exp-bullets">
+              <li>Assembled automotive instrument clusters (speedometers) by combining electronic and mechanical components according to SOPs.</li>
+              <li>Performed precision assembly of PCBs, displays, needles, bezels, lenses, and housings.</li>
+              <li>Conducted systematic functional testing and rigorous visual inspections to ensure manufacturing standards.</li>
+              <li>Operated assembly-line equipment and hand tools maintaining high production efficiency and 5S guidelines.</li>
+            </ul>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-badge">DEVELOPMENT & AI</div>
+            <div class="exp-period">2024 - PRESENT</div>
+            <h3 class="exp-role">AI & Web Developer</h3>
+            <div class="exp-company"><i class="fa-solid fa-code"></i> Independent Projects</div>
+            <ul class="exp-bullets">
+              <li>Designing high-performance 3D canvas web experiences and real-time scroll animations.</li>
+              <li>Building API integrations, automated data pipelines, and Claude-powered AI workflows.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & CTA Section -->
+    <section id="contact" class="contact-section">
+      <div class="container contact-container">
+        <div class="contact-card">
+          <div class="section-tag">Get in Touch</div>
+          <h2 class="section-heading">Let's Connect & Work Together.</h2>
+          <p class="contact-desc">
+            Have a project in mind, an engineering role, or an AI collaboration? Fill out the form or reach out directly.
+          </p>
+          
+          <!-- Contact Quick Action Pills -->
+          <div class="contact-info-pills">
+            <button class="info-pill" id="copy-email-btn" title="Click to copy email">
+              <i class="fa-solid fa-copy"></i>
+              <span id="copy-email-text">venkeypro456@gmail.com</span>
+            </button>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=venkeypro456@gmail.com" target="_blank" rel="noopener noreferrer" class="info-pill">
+              <i class="fa-solid fa-envelope"></i> Open in Gmail
+            </a>
+            <a href="https://wa.me/918639865789" target="_blank" rel="noopener noreferrer" class="info-pill">
+              <i class="fa-brands fa-whatsapp"></i> +91 8639865789
+            </a>
+            <span class="info-pill">
+              <i class="fa-solid fa-location-dot"></i> Venkatagiri, AP, India
+            </span>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="form-name" class="form-input" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input type="email" id="form-email" class="form-input" placeholder="Your Email Address" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="form-subject" class="form-input" placeholder="Subject / Project Title" required />
+            </div>
+            <div class="form-group">
+              <textarea id="form-message" class="form-textarea" rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary btn-submit">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>SEND MESSAGE</span>
+              </button>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=venkeypro456@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>OPEN GMAIL</span>
+              </a>
+            </div>
+          </form>
+
+          <!-- Direct Social Links in Contact -->
+          <div class="contact-social-row">
+            <a href="https://github.com/vv3607527-creator" target="_blank" rel="noopener noreferrer" class="social-icon-circle" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/venky-venkatesh-726172415" target="_blank" rel="noopener noreferrer" class="social-icon-circle" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/mrvenky60" target="_blank" rel="noopener noreferrer" class="social-icon-circle" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/VENKY5789" target="_blank" rel="noopener noreferrer" class="social-icon-circle" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast-notification"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-logo">
+          <span class="logo-text">VENKATESH</span><span class="logo-dot">.</span>
+        </div>
+        <div class="footer-copy">
+          &copy; 2026 Nakka Venkatesh. All rights reserved. Built with 3D Motion.
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/vv3607527-creator" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/venky-venkatesh-726172415" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/mrvenky60" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/VENKY5789" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
