@@ -1,0 +1,9 @@
+{
+  "name": "3d-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static 3D portfolio website",
+  "scripts": {
+    "test": "node tests/portfolio.test.js"
+  }
+}

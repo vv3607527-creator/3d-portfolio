@@ -47,7 +47,8 @@ function resizeCanvas() {
   canvas.style.width = `${width}px`;
   canvas.style.height = `${height}px`;
 
-  ctx.scale(dpr, dpr);
+  // Reset the transform so repeated resize events do not compound the scale.
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   ctx.imageSmoothingEnabled = true;
   ctx.imageSmoothingQuality = 'high';
 
@@ -167,7 +168,14 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 let toastTimeout = null;
 function showToast(message, icon = 'fa-check-circle') {
   if (!toast) return;
-  toast.innerHTML = `<i class="fa-solid ${icon}" style="color: var(--primary-red); font-size: 1.1rem;"></i> <span>${message}</span>`;
+  toast.replaceChildren();
+  const iconElement = document.createElement('i');
+  iconElement.className = `fa-solid ${icon}`;
+  iconElement.style.color = 'var(--primary-red)';
+  iconElement.style.fontSize = '1.1rem';
+  const messageElement = document.createElement('span');
+  messageElement.textContent = message;
+  toast.append(iconElement, document.createTextNode(' '), messageElement);
   toast.classList.add('show');
   
   if (toastTimeout) clearTimeout(toastTimeout);
